@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { format } from "date-fns";
 import { useGetPost } from "../hooks/useGetPost";
 
-const ArticleDetail = () => {
+const ArticleDetail: React.FC = () => {
   const { id } = useParams<{ id?: string }>();
 
   const { post, error, isLoading } = useGetPost(id || "");

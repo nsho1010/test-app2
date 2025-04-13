@@ -1,6 +1,6 @@
 import { useContactForm } from "../hooks/useContactForm";
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const { register, handleSubmit, errors, isSubmitting, reset, onSubmit } =
     useContactForm();
 

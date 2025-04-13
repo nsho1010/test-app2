@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header: React.FC = () => {
   return (
     <header className="w-full">
       <div className="flex justify-between items-center bg-gray-800 text-white  px-8 py-6">

@@ -2,7 +2,7 @@ import { format } from "date-fns";
 import { Link } from "react-router-dom";
 import { useGetAllPosts } from "../hooks/useGetAllPosts";
 
-const Article = () => {
+const Article: React.FC = () => {
   const { posts, error, isLoading } = useGetAllPosts();
 
   if (isLoading) return <div>読み込み中...</div>;
